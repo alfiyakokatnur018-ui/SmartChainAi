@@ -1,7 +1,7 @@
 console.log("SIMULATOR JS LOADED");
 
 const SIMULATION_API =
-    "http://127.0.0.1:8000/simulate-disruption";
+    "https://smartchainai-y8zz.onrender.com/simulate-disruption";
 
 
 async function runSimulation() {

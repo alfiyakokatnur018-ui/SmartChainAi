@@ -1,4 +1,4 @@
-const SUPPLIER_API = "http://127.0.0.1:8000/suppliers";
+const SUPPLIER_API = "https://smartchainai-y8zz.onrender.com/suppliers";
 
 async function loadSuppliers() {
 

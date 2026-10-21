@@ -1,5 +1,5 @@
 const ROUTE_API =
-    "http://127.0.0.1:8000/optimize-route";
+    "https://smartchainai-y8zz.onrender.com/optimize-route";
 
 
 async function loadRoute(blocked = null) {

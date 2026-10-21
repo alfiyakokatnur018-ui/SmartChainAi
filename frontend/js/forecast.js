@@ -1,4 +1,5 @@
-const FORECAST_API = "http://127.0.0.1:8000/forecast";
+const FORECAST_API =
+    "https://smartchainai-y8zz.onrender.com/forecast";
 
 async function loadForecast() {
 

@@ -1,4 +1,4 @@
-const INVENTORY_API = "http://127.0.0.1:8000/inventory";
+const INVENTORY_API = "https://smartchainai-y8zz.onrender.com/inventory";
 
 async function loadInventory() {
 
