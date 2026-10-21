@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Demand Forecast | SmartChain AI</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+    <aside class="sidebar">
+
+        <div class="logo">
+            <h2>SmartChain AI</h2>
+            <p>Resilience System</p>
+        </div>
+
+        <nav>
+            <a href="index.html">Dashboard</a>
+            <a href="inventory.html">Inventory</a>
+            <a href="forecast.html" class="active">Demand Forecast</a>
+            <a href="suppliers.html">Suppliers</a>
+            <a href="route.html">Route Optimizer</a>
+            <a href="simulator.html">Disruption Simulator</a>
+        </nav>
+
+    </aside>
+
+
+    <main class="main-content">
+
+        <header>
+
+            <div>
+                <h1>AI Demand Forecast</h1>
+
+                <p>
+                    Machine-learning based demand prediction
+                    for the next 7 days.
+                </p>
+            </div>
+
+            <div class="system-status">
+                ● ML Model Active
+            </div>
+
+        </header>
+
+
+        <section class="cards">
+
+            <div class="card">
+                <p>Product</p>
+                <h2 id="forecastProduct">Medicine</h2>
+                <span class="info">Forecasting</span>
+            </div>
+
+            <div class="card">
+                <p>Today's Stock</p>
+                <h2>250</h2>
+                <span class="danger">Low Stock</span>
+            </div>
+
+            <div class="card">
+                <p>Day 37 Prediction</p>
+                <h2 id="finalPrediction">--</h2>
+                <span class="warning">Expected Demand</span>
+            </div>
+
+            <div class="card">
+                <p>Shortage Risk</p>
+                <h2 id="shortageRisk">Checking...</h2>
+                <span class="danger">AI Analysis</span>
+            </div>
+
+        </section>
+
+
+        <section class="panel">
+
+            <div class="panel-title">
+                <h2>7-Day Demand Prediction</h2>
+                <span>Machine Learning Forecast</span>
+            </div>
+
+            <div class="chart-box">
+                <canvas id="demandChart"></canvas>
+            </div>
+
+        </section>
+
+
+        <section class="panel forecast-insight">
+
+            <div class="panel-title">
+                <h2>AI Insight</h2>
+                <span>SmartChain Recommendation</span>
+            </div>
+
+            <p id="aiInsight">
+                Analysing predicted demand...
+            </p>
+
+        </section>
+
+    </main>
+
+
+    <script src="js/forecast.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Disruption Simulator | SmartChain AI</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<aside class="sidebar">
+
+    <div class="logo">
+        <h2>SmartChain AI</h2>
+        <p>Resilience System</p>
+    </div>
+
+    <nav>
+        <a href="index.html">Dashboard</a>
+        <a href="inventory.html">Inventory</a>
+        <a href="forecast.html">Demand Forecast</a>
+        <a href="suppliers.html">Suppliers</a>
+        <a href="route.html">Route Optimizer</a>
+
+        <a href="simulator.html" class="active">
+            Disruption Simulator
+        </a>
+    </nav>
+
+</aside>
+
+
+<main class="main-content">
+
+    <header>
+
+        <div>
+            <h1>Supply Chain Disruption Simulator</h1>
+
+            <p>
+                Test how SmartChain AI responds to multiple
+                supply-chain disruptions.
+            </p>
+        </div>
+
+        <div class="system-status">
+            ● Simulation Ready
+        </div>
+
+    </header>
+
+
+    <section class="simulation-start">
+
+        <h2>Major Disruption Scenario</h2>
+
+        <p>
+            Simulate a demand spike, inventory shortage,
+            supplier failure and transportation disruption.
+        </p>
+
+        <button
+            class="simulate-button"
+            onclick="runSimulation()">
+
+            Run Disruption Simulation
+
+        </button>
+
+    </section>
+
+
+    <div id="simulationResults"
+         class="simulation-results">
+
+        <section class="cards">
+
+            <div class="card">
+                <p>Resilience Before</p>
+                <h2 id="beforeScore">--</h2>
+                <span class="danger">High Risk</span>
+            </div>
+
+            <div class="card">
+                <p>Resilience After</p>
+                <h2 id="afterScore">--</h2>
+                <span class="success">Recovered</span>
+            </div>
+
+            <div class="card">
+                <p>Delay Reduced</p>
+                <h2 id="delaySaved">--</h2>
+                <span class="success">Hours Saved</span>
+            </div>
+
+            <div class="card">
+                <p>Estimated Savings</p>
+                <h2 id="moneySaved">--</h2>
+                <span class="success">Loss Avoided</span>
+            </div>
+
+        </section>
+
+
+        <section class="dashboard-grid">
+
+            <div class="panel">
+
+                <div class="panel-title">
+                    <h2>Detected Disruptions</h2>
+                    <span>Risk Engine</span>
+                </div>
+
+                <div id="disruptionList"></div>
+
+            </div>
+
+
+            <div class="panel">
+
+                <div class="panel-title">
+                    <h2>Recommended Actions</h2>
+                    <span>Decision Support</span>
+                </div>
+
+                <div id="recommendationList"></div>
+
+            </div>
+
+        </section>
+
+    </div>
+
+</main>
+
+
+<script src="js/simulator.js"></script>
+</body>
+</html>

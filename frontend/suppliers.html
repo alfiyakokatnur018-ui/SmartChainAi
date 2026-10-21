@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Suppliers | SmartChain AI</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <aside class="sidebar">
+
+        <div class="logo">
+            <h2>SmartChain AI</h2>
+            <p>Resilience System</p>
+        </div>
+
+        <nav>
+            <a href="index.html">Dashboard</a>
+            <a href="inventory.html">Inventory</a>
+            <a href="forecast.html">Demand Forecast</a>
+            <a href="suppliers.html">Suppliers</a>
+            <a href="route.html">Route Optimizer</a>
+            <a href="simulator.html">Disruption Simulator</a>
+        </nav>
+
+    </aside>
+
+
+    <main class="main-content">
+
+        <header>
+
+            <div>
+                <h1>Smart Supplier Selection</h1>
+
+                <p>
+                    Compare alternative suppliers using cost,
+                    delivery speed and reliability.
+                </p>
+            </div>
+
+            <div class="system-status">
+                ● Supplier Intelligence Active
+            </div>
+
+        </header>
+
+
+        <section class="cards">
+
+            <div class="card">
+                <p>Required Product</p>
+                <h2>Medicine</h2>
+                <span class="danger">Shortage Risk</span>
+            </div>
+
+            <div class="card">
+                <p>Required Quantity</p>
+                <h2>500</h2>
+                <span class="info">Units</span>
+            </div>
+
+            <div class="card">
+                <p>Suppliers Analysed</p>
+                <h2 id="supplierCount">--</h2>
+                <span class="info">Available</span>
+            </div>
+
+            <div class="card">
+                <p>Recommended Supplier</p>
+                <h2 id="bestSupplier">Analysing...</h2>
+                <span class="success">SmartChain Choice</span>
+            </div>
+
+        </section>
+
+
+        <section class="panel">
+
+            <div class="panel-title">
+                <h2>Supplier Ranking</h2>
+                <span>SmartChain Decision Engine</span>
+            </div>
+
+            <div class="table-container">
+
+                <table class="inventory-table">
+
+                    <thead>
+                        <tr>
+                            <th>Rank</th>
+                            <th>Supplier</th>
+                            <th>Price / Unit</th>
+                            <th>Lead Time</th>
+                            <th>Reliability</th>
+                            <th>Available Stock</th>
+                            <th>AI Score</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="supplierBody"></tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <script src="js/suppliers.js"></script>
+
+</body>
+</html>

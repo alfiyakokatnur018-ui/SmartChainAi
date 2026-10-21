@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SmartChain AI | Supply Chain Control Tower</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+
+        <div class="logo">
+            <h2>SmartChain AI</h2>
+            <p>Resilience System</p>
+        </div>
+
+        <nav>
+            <a href="#" class="active">Dashboard</a>
+            <a href="inventory.html">Inventory</a>
+            <a href="forecast.html">Demand Forecast</a>
+            <a href="suppliers.html">Suppliers</a>
+            <a href="route.html">Route Optimizer</a>
+            <a href="simulator.html">Disruption Simulator</a>
+        </nav>
+
+    </aside>
+
+
+    <!-- MAIN CONTENT -->
+    <main class="main-content">
+
+        <!-- HEADER -->
+        <header>
+
+            <div>
+                <h1>Supply Chain Control Tower</h1>
+                <p>
+                    Monitor risks, predict disruptions and take
+                    intelligent actions.
+                </p>
+            </div>
+
+            <div class="system-status">
+                ● System Operational
+            </div>
+
+        </header>
+
+
+        <!-- SUMMARY CARDS -->
+        <section class="cards">
+
+            <div class="card">
+                <p>Resilience Score</p>
+
+                <h2 id="resilienceScore">
+                    82/100
+                </h2>
+
+                <span class="success">
+                    ● Low Risk
+                </span>
+            </div>
+
+
+            <div class="card">
+                <p>Active Alerts</p>
+
+                <h2 id="activeAlerts">
+                    3
+                </h2>
+
+                <span class="warning">
+                    Needs Attention
+                </span>
+            </div>
+
+
+            <div class="card">
+                <p>Active Shipments</p>
+
+                <h2 id="shipments">
+                    12
+                </h2>
+
+                <span class="info">
+                    In Transit
+                </span>
+            </div>
+
+
+            <div class="card">
+                <p>Inventory Risks</p>
+
+                <h2 id="inventoryRisk">
+                    2
+                </h2>
+
+                <span class="danger">
+                    Shortage Risk
+                </span>
+            </div>
+
+        </section>
+
+
+        <!-- DASHBOARD CONTENT -->
+        <section class="dashboard-grid">
+
+            <!-- RISK ALERTS -->
+            <div class="panel">
+
+                <div class="panel-title">
+                    <h2>AI Risk Alerts</h2>
+                    <span>Live Monitoring</span>
+                </div>
+
+
+                <div class="alert alert-danger">
+
+                    <div>
+                        <h3>Medicine shortage predicted</h3>
+
+                        <p>
+                            Current inventory may run out
+                            within 4 days.
+                        </p>
+                    </div>
+
+                    <button>
+                        View Action
+                    </button>
+
+                </div>
+
+
+                <div class="alert alert-warning">
+
+                    <div>
+                        <h3>Supplier A delayed</h3>
+
+                        <p>
+                            Estimated supplier delay:
+                            2 days.
+                        </p>
+                    </div>
+
+                    <button>
+                        Find Supplier
+                    </button>
+
+                </div>
+
+
+                <div class="alert alert-warning">
+
+                    <div>
+                        <h3>Route disruption detected</h3>
+
+                        <p>
+                            Heavy rainfall is affecting
+                            Route A.
+                        </p>
+                    </div>
+
+                    <button>
+                        Optimize Route
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- AI RECOMMENDATIONS -->
+            <div class="panel">
+
+                <div class="panel-title">
+                    <h2>AI Recommendations</h2>
+                    <span>3 Actions</span>
+                </div>
+
+
+                <div class="recommendation">
+
+                    <div class="number">01</div>
+
+                    <div>
+                        <h3>Reorder Inventory</h3>
+
+                        <p>
+                            Order 500 medicine units to
+                            prevent the predicted shortage.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="recommendation">
+
+                    <div class="number">02</div>
+
+                    <div>
+                        <h3>Switch Supplier</h3>
+
+                        <p>
+                            Supplier B offers 96% reliability
+                            with a 2-day lead time.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="recommendation">
+
+                    <div class="number">03</div>
+
+                    <div>
+                        <h3>Reroute Shipment</h3>
+
+                        <p>
+                            Route B can reduce the expected
+                            transportation delay.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <script src="js/app.js"></script>
+
+</body>
+
+</html>

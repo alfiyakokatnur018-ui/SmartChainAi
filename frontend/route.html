@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Route Optimizer | SmartChain AI</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<aside class="sidebar">
+
+    <div class="logo">
+        <h2>SmartChain AI</h2>
+        <p>Resilience System</p>
+    </div>
+
+    <nav>
+
+        <a href="index.html">Dashboard</a>
+
+        <a href="inventory.html">
+            Inventory
+        </a>
+
+        <a href="forecast.html">
+            Demand Forecast
+        </a>
+
+        <a href="suppliers.html">
+            Suppliers
+        </a>
+
+        <a href="route.html" class="active">
+            Route Optimizer
+        </a>
+
+        <a href="simulator.html">
+            Disruption Simulator
+        </a>
+
+    </nav>
+
+</aside>
+
+
+<main class="main-content">
+
+    <header>
+
+        <div>
+
+            <h1>Intelligent Route Optimizer</h1>
+
+            <p>
+                Find alternative delivery routes
+                during transportation disruptions.
+            </p>
+
+        </div>
+
+        <div class="system-status">
+            ● Routing Engine Active
+        </div>
+
+    </header>
+
+
+    <section class="cards">
+
+        <div class="card">
+
+            <p>Starting Point</p>
+
+            <h2>Warehouse</h2>
+
+            <span class="info">
+                Distribution Center
+            </span>
+
+        </div>
+
+
+        <div class="card">
+
+            <p>Destination</p>
+
+            <h2>Customer</h2>
+
+            <span class="info">
+                Delivery Point
+            </span>
+
+        </div>
+
+
+        <div class="card">
+
+            <p>Route Distance</p>
+
+            <h2 id="routeDistance">
+                --
+            </h2>
+
+            <span class="info">
+                Distance Units
+            </span>
+
+        </div>
+
+
+        <div class="card">
+
+            <p>Route Status</p>
+
+            <h2 id="routeStatus">
+                Normal
+            </h2>
+
+            <span id="statusText" class="success">
+                No Disruption
+            </span>
+
+        </div>
+
+    </section>
+
+
+    <section class="dashboard-grid">
+
+        <div class="panel">
+
+            <div class="panel-title">
+
+                <h2>Delivery Network</h2>
+
+                <span>Dijkstra Algorithm</span>
+
+            </div>
+
+
+            <div id="routeDisplay"
+                 class="route-display">
+
+                Calculating optimal route...
+
+            </div>
+
+        </div>
+
+
+        <div class="panel">
+
+            <div class="panel-title">
+
+                <h2>Disruption Control</h2>
+
+                <span>Simulation</span>
+
+            </div>
+
+
+            <p class="route-description">
+
+                Simulate a transportation disruption
+                by blocking Hub C.
+
+            </p>
+
+
+            <button
+                class="route-button"
+                onclick="simulateDisruption()">
+
+                Block Hub C
+
+            </button>
+
+
+            <button
+                class="reset-button"
+                onclick="resetRoute()">
+
+                Reset Route
+
+            </button>
+
+
+            <div id="routeRecommendation"
+                 class="route-recommendation">
+
+                SmartChain is monitoring the
+                delivery network.
+
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<script src="js/route.js"></script>
+
+</body>
+
+</html>

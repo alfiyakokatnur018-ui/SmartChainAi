@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventory | SmartChain AI</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <aside class="sidebar">
+        <div class="logo">
+            <h2>SmartChain AI</h2>
+            <p>Resilience System</p>
+        </div>
+
+        <nav>
+            <a href="index.html">Dashboard</a>
+            <a href="inventory.html" class="active">Inventory</a>
+            <a href="forecast.html">Demand Forecast</a>
+            <a href="suppliers.html">Suppliers</a>
+            <a href="route.html">Route Optimizer</a>
+            <a href="simulator.html">Disruption Simulator</a>
+        </nav>
+    </aside>
+
+
+    <main class="main-content">
+
+        <header>
+            <div>
+                <h1>Inventory Management</h1>
+                <p>Monitor stock levels and identify potential shortages.</p>
+            </div>
+
+            <div class="system-status">
+                ● Live Inventory
+            </div>
+        </header>
+
+
+        <div class="panel">
+
+            <div class="panel-title">
+                <h2>Current Inventory</h2>
+                <span>AI Risk Monitoring</span>
+            </div>
+
+            <div class="table-container">
+
+                <table class="inventory-table">
+
+                    <thead>
+                        <tr>
+                            <th>Product</th>
+                            <th>Current Stock</th>
+                            <th>Reorder Level</th>
+                            <th>Expected Demand</th>
+                            <th>Risk Status</th>
+                            <th>AI Recommendation</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="inventoryBody">
+                        <!-- JavaScript will load inventory here -->
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <script src="js/inventory.js"></script>
+
+</body>
+</html>
